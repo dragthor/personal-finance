@@ -1,2 +1,2 @@
 # personal-finance
-Personal finance app - budget, set goals, build savings, and eliminate debt.
+JavaScript personal finance app - budget, set goals, build savings, and eliminate debt.

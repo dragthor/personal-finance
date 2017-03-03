@@ -1,0 +1,27 @@
+{
+  "name": "personal-finance",
+  "version": "0.0.1",
+  "description": "JavaScript personal finance app - budget, set goals, build savings, and eliminate debt.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dragthor/personal-finance.git"
+  },
+  "scripts": {
+    "start": "node src/main.js",
+    "test" : "mocha --reporter progress \"tests/**/*.test.js\""
+  },
+  "author": "Kris Krause",
+  "license": "MIT",
+  "engines": {
+    "node" : ">=6.9.5",
+    "npm": ">=3.10.10"
+  },
+  "dependencies": {
+    "chalk": "1.1.3"
+  },
+  "devDependencies": {
+    "chalk": "1.1.3",
+    "chai": "3.5.0",
+    "mocha": "3.2.0"
+  }
+}
