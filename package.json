@@ -2,6 +2,7 @@
   "name": "personal-finance",
   "version": "0.0.1",
   "description": "JavaScript personal finance app - budget, set goals, build savings, and eliminate debt.",
+  "keywords" : [ "personal-finance", "budget", "budget-management", "debt-manager", "money-manager" ],
   "repository": {
     "type": "git",
     "url": "https://github.com/dragthor/personal-finance.git"
