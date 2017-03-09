@@ -3,3 +3,11 @@ JavaScript personal finance app - budget, set goals, build savings, and eliminat
 
 [![Build Status](https://travis-ci.org/dragthor/personal-finance.svg?branch=master)](https://travis-ci.org/dragthor/personal-finance)
 
+## Installation
+`npm install`
+
+## Test
+`npm test`
+
+## Run
+`npm start`
