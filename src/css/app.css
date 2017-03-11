@@ -7,14 +7,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Lucida Grande", "Segoe UI", "Ubuntu", "Cantarell", "Arial", sans-serif !important;
 }
 
-#txtInput {
-    height: 8rem;
-}
-
-.footer-email {
-    color: #000;
-}
-
-.footer-callout {
-    font-size: .75rem;
+.accordion-title {
+    font-size: 2rem;
 }

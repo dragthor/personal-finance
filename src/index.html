@@ -13,8 +13,120 @@
 
 <body id="body">
     <div class="row">
-        <div class="small-12 columns">
-            <h1>Personal Finance</h1>
+        <div class="small-12 medium-8 large-9 columns">
+            <h2>Monthly Budget</h2>
+
+
+            <ul class="accordion" data-accordion>
+
+                <li class="accordion-item is-active" data-accordion-item>
+                    <a href="#" class="accordion-title">Income</a>
+                    <div class="accordion-content" data-tab-content>
+                        List of monthly income goes here.
+                    </div>
+                </li>
+
+                <li class="accordion-item is-active" data-accordion-item>
+                    <a href="#" class="accordion-title">Savings</a>
+                    <div class="accordion-content" data-tab-content>
+                        List of monthly savings go here.
+                    </div>
+                </li>
+
+                <li class="accordion-item is-active" data-accordion-item>
+                    <a href="#" class="accordion-title">Expenses</a>
+                    <div class="accordion-content" data-tab-content>
+                        List of monthly expenses go here.
+                    </div>
+                </li>
+
+                <li class="accordion-item is-active" data-accordion-item>
+                    <a href="#" class="accordion-title">Debts</a>
+                    <div class="accordion-content" data-tab-content>
+                        List of monthly debts go here.
+                    </div>
+                </li>
+
+            </ul>
+
+
+        </div>
+
+        <div class="small-12 medium-4 large-3 columns">
+            <h2>Savings</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Value</th>
+                        <th>Yield</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bank1</td>
+                        <td>1000</td>
+                        <td>10</td>
+                    </tr>
+
+                    <tr>
+                        <td>Bank2</td>
+                        <td>1000</td>
+                        <td>10</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Assets</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Value</th>
+                        <th>Yield</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bonds1</td>
+                        <td>1000</td>
+                        <td>10</td>
+                    </tr>
+
+                    <tr>
+                        <td>Stocks1</td>
+                        <td>1000</td>
+                        <td>10</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Debts</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Balance</th>
+                        <th>Yearly</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mortgage</td>
+                        <td>200000</td>
+                        <td>10</td>
+                    </tr>
+
+                    <tr>
+                        <td>Loan2</td>
+                        <td>1000</td>
+                        <td>10</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
@@ -23,6 +135,7 @@
 <!-- Insert this line above script imports  -->
 <script>
     if (typeof module === "object") { window.module = module; module = undefined; }
+
 </script>
 
 <!-- normal script imports etc  -->
