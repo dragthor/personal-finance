@@ -6,10 +6,18 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Finance</title>
+    <link rel="stylesheet" href="./css/foundation.css">
+    <link rel="stylesheet" href="./css/app.css">
 </head>
 
+
 <body id="body">
-    <h1>Personal Finance</h1>
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Personal Finance</h1>
+        </div>
+    </div>
+
 </body>
 
 <!-- Insert this line above script imports  -->
@@ -17,9 +25,16 @@
     if (typeof module === "object") { window.module = module; module = undefined; }
 </script>
 
+<!-- normal script imports etc  -->
+<script src="./vendor/jquery.js"></script>
+<script src="./vendor/what-input.js"></script>
+<script src="./vendor/foundation.js"></script>
+<script src="./app.js"></script>
+
 <script>
     // You can also require other files to run in this process
     require("./renderer.js");
+
 </script>
 
 </html>
