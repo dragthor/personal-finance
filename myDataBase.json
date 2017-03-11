@@ -1,0 +1,38 @@
+{
+    "savings": [
+        {
+            "name": "Bank",
+            "balance": 1000,
+            "yield": 10
+        }
+    ],
+    "assets": [
+        {
+            "name": "Bonds",
+            "balance": 5000,
+            "yield": 50
+        },
+        {
+            "name": "Stocks",
+            "balance": 1000,
+            "yield": 1.75
+        },
+        {
+            "name": "CDs",
+            "balance": 1000,
+            "yield": 12.50
+        }
+    ],
+    "debts": [
+        {
+            "name": "Mortgage",
+            "balance": 200000,
+            "rate": 3.875
+        },
+        {
+            "name": "Car Loan",
+            "balance": 6000,
+            "rate": 2.25
+        }
+    ]
+}

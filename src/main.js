@@ -1,5 +1,6 @@
 const electron = require("electron");
 const { dialog } = require("electron");
+const JsonDB = require("node-json-db");
 
 const { Menu, MenuItem, clipboard } = electron;
 
@@ -98,8 +99,12 @@ let mainWindow
 function createWindow() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 600, height: 600, center: true, fullscreenable: false
+    width: 810, height: 600, center: true, fullscreenable: false
   })
+
+  // var db = new JsonDB("myDataBase", true, true);
+
+  // db.push("/savings", [{ 'name': 'Bank1', 'balance': 1000, 'yield': 10 }, { 'name': 'Bank2', 'balance': 1000, 'yield': 10 }]);
 
   // and load the index.html of the app.
   mainWindow.loadURL(`file://${__dirname}/index.html`);
@@ -109,6 +114,7 @@ function createWindow() {
 
 
   Menu.setApplicationMenu(menu);
+
 
   // Emitted when the window is closed.
   mainWindow.on("closed", function () {

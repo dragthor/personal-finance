@@ -12,6 +12,7 @@
 
 
 <body id="body">
+
     <div class="row">
         <div class="small-12 medium-8 large-9 columns">
             <h2>Monthly Budget</h2>
@@ -60,20 +61,14 @@
                     <tr>
                         <th>Name</th>
                         <th>Value</th>
-                        <th>Yield</th>
+                        <th>$ Yield</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody data-bind="foreach: savings">
                     <tr>
-                        <td>Bank1</td>
-                        <td>1000</td>
-                        <td>10</td>
-                    </tr>
-
-                    <tr>
-                        <td>Bank2</td>
-                        <td>1000</td>
-                        <td>10</td>
+                        <td data-bind="text: name"></td>
+                        <td data-bind="text: balance"></td>
+                        <td data-bind="text: yield"></td>
                     </tr>
                 </tbody>
             </table>
@@ -85,20 +80,14 @@
                     <tr>
                         <th>Name</th>
                         <th>Value</th>
-                        <th>Yield</th>
+                        <th>$ Yield</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody data-bind="foreach: assets">
                     <tr>
-                        <td>Bonds1</td>
-                        <td>1000</td>
-                        <td>10</td>
-                    </tr>
-
-                    <tr>
-                        <td>Stocks1</td>
-                        <td>1000</td>
-                        <td>10</td>
+                        <td data-bind="text: name"></td>
+                        <td data-bind="text: balance"></td>
+                        <td data-bind="text: yield"></td>
                     </tr>
                 </tbody>
             </table>
@@ -110,20 +99,14 @@
                     <tr>
                         <th>Name</th>
                         <th>Balance</th>
-                        <th>Yearly</th>
+                        <th>Rate</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody data-bind="foreach: debts">
                     <tr>
-                        <td>Mortgage</td>
-                        <td>200000</td>
-                        <td>10</td>
-                    </tr>
-
-                    <tr>
-                        <td>Loan2</td>
-                        <td>1000</td>
-                        <td>10</td>
+                        <td data-bind="text: name"></td>
+                        <td data-bind="text: balance"></td>
+                        <td data-bind="text: rate"></td>
                     </tr>
                 </tbody>
             </table>
@@ -140,6 +123,7 @@
 
 <!-- normal script imports etc  -->
 <script src="./vendor/jquery.js"></script>
+<script src="./vendor/knockout-3.4.2.js"></script>
 <script src="./vendor/what-input.js"></script>
 <script src="./vendor/foundation.js"></script>
 <script src="./app.js"></script>
