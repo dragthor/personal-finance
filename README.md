@@ -4,7 +4,9 @@ JavaScript personal finance app - budget, set goals, build savings, and eliminat
 [![Build Status](https://travis-ci.org/dragthor/personal-finance.svg?branch=master)](https://travis-ci.org/dragthor/personal-finance)
 
 ## Features
-* Works offline, all data is local
+* Free & open source.
+* Works completely offline, all data is local
+* Helps you to become debt free
 * Responsive design
 * Track monthly income
 * Track monthly expense
