@@ -12,6 +12,8 @@ JavaScript personal finance app - budget, set goals, build savings, and eliminat
 * Track savings
 * Track debts
 
+![Screenshot](https://raw.githubusercontent.com/dragthor/personal-finance/master/screenshots/screenshot1.PNG)
+
 ## Installation
 `npm install`
 
