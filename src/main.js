@@ -21,41 +21,22 @@ const template = [
     role: "window",
     submenu: [
       {
-        label: "Open",
-        accelerator: "CmdOrCtrl+O",
+        label: "Back Up",
+        accelerator: "CmdOrCtrl+B",
         click() {
-          dialog.showOpenDialog(function (fileNames) {
-            if (typeof fileNames === "undefined") return;
+          // dialog.showSaveDialog(function (fileName) {
+          //   if (typeof fileName === "undefined") return;
 
-            var file = fileNames[0];
+            // mainWindow.webContents.executeJavaScript("document.getElementById('txtInput').value;", function (result) {
+            //   if (typeof result === "undefined") return;
+            //   if (result.length === 0) return;
+            //   if (result.trim().length === 0) return;
 
-            fs.readFile(file, "utf-8", function (err, data) {
-              if (err != null) console.log(err);
-
-              mainWindow.webContents.executeJavaScript("document.getElementById('txtInput').value = '" + data.trim() + "';");
-              mainWindow.webContents.executeJavaScript();
-            });
-
-          });
-        }
-      },
-      {
-        label: "Save",
-        accelerator: "CmdOrCtrl+S",
-        click() {
-          dialog.showSaveDialog(function (fileName) {
-            if (typeof fileName === "undefined") return;
-
-            mainWindow.webContents.executeJavaScript("document.getElementById('txtInput').value;", function (result) {
-              if (typeof result === "undefined") return;
-              if (result.length === 0) return;
-              if (result.trim().length === 0) return;
-
-              fs.writeFile(fileName, result.trim(), function (err) {
-                if (err != null) console.log(err);
-              });
-            });
-          });
+            //   fs.writeFile(fileName, result.trim(), function (err) {
+            //     if (err != null) console.log(err);
+            //   });
+            // });
+          // });
         }
       },
       {
@@ -102,7 +83,7 @@ function createWindow() {
     width: 810, height: 600, center: true, fullscreenable: false
   })
 
-  // var db = new JsonDB("myDataBase", true, true);
+  // var db = new JsonDB("mydata", true, true);
 
   // db.push("/savings", [{ 'name': 'Bank1', 'balance': 1000, 'yield': 10 }, { 'name': 'Bank2', 'balance': 1000, 'yield': 10 }]);
 

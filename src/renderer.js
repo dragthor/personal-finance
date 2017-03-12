@@ -4,7 +4,7 @@
 const electron = require("electron");
 const JsonDB = require("node-json-db");
 
-var db = new JsonDB("myDataBase", true, true);
+var db = new JsonDB("mydata", true, true);
 var viewModel = {};
 
 viewModel.savings = ko.observableArray(db.getData("/savings"));

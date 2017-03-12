@@ -4,6 +4,11 @@
             "name": "Bank",
             "balance": 1000,
             "yield": 10
+        },
+                {
+            "name": "Bank2",
+            "balance": 1000,
+            "yield": 12.50
         }
     ],
     "assets": [

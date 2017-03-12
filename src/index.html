@@ -15,7 +15,7 @@
 
     <div class="row">
         <div class="small-12 medium-8 large-9 columns">
-            <h2>Monthly Budget</h2>
+            <h2><span class="fi-calendar"></span> Monthly Budget</h2>
 
 
             <ul class="accordion" data-accordion>
@@ -28,16 +28,16 @@
                 </li>
 
                 <li class="accordion-item is-active" data-accordion-item>
-                    <a href="#" class="accordion-title">Savings</a>
+                    <a href="#" class="accordion-title">Expenses</a>
                     <div class="accordion-content" data-tab-content>
-                        List of monthly savings go here.
+                        List of monthly expenses go here.
                     </div>
                 </li>
 
                 <li class="accordion-item is-active" data-accordion-item>
-                    <a href="#" class="accordion-title">Expenses</a>
+                    <a href="#" class="accordion-title">Savings</a>
                     <div class="accordion-content" data-tab-content>
-                        List of monthly expenses go here.
+                        List of monthly savings go here.
                     </div>
                 </li>
 
@@ -54,26 +54,36 @@
         </div>
 
         <div class="small-12 medium-4 large-3 columns">
-            <h2>Savings</h2>
+            <h2><span class="fi-dollar-bill"></span> Savings</h2>
 
             <table>
                 <thead>
                     <tr>
-                        <th>Name</th>
+                      
+                        <th colspan="2">Name</th>
                         <th>Value</th>
                         <th>$ Yield</th>
                     </tr>
                 </thead>
                 <tbody data-bind="foreach: savings">
                     <tr>
+                        <td>
+                            <a data-open="exampleModal1">
+                                <span class="fi-pencil size-18"></span>
+                            </a>
+                        </td>
                         <td data-bind="text: name"></td>
                         <td data-bind="text: balance"></td>
                         <td data-bind="text: yield"></td>
                     </tr>
+                    
                 </tbody>
-            </table>
 
-            <h2>Assets</h2>
+                
+            </table>
+            <a class="button small expanded">Add Savings</a>
+
+            <h2><span class="fi-like"></span> Assets</h2>
 
             <table>
                 <thead>
@@ -92,7 +102,7 @@
                 </tbody>
             </table>
 
-            <h2>Debts</h2>
+            <h2><span class="fi-dislike"></span> Debts</h2>
 
             <table>
                 <thead>
@@ -113,25 +123,62 @@
         </div>
     </div>
 
+    <!-- Modals -->
+
+    <div class="reveal" id="exampleModal1" data-reveal>
+        <h2>Savings</h2>
+        <p>
+
+            <div class="row">
+                <div class="small-12 columns">
+                    <label>Name
+        <input type="text" placeholder="Bank">
+      </label>
+                </div>
+                <div class="small-12 columns">
+                    <label>Value
+        <input type="text" placeholder="1000">
+      </label>
+                </div>
+
+                <div class="small-12 columns">
+                    <label>Dollar Yield
+        <input type="text" placeholder="10">
+      </label>
+                </div>
+                <div class="small-12 columns">
+                    <button type="button" class="button expanded">Save</button>
+                    <button type="button" class="alert button expanded">Delete</button>
+                </div>
+            </div>
+
+
+        </p>
+
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+    </div>
+
+
+    <link rel="stylesheet" href="./css/foundation-icons.css" />
+
+    <!-- Insert this line above script imports  -->
+    <script>
+        if (typeof module === "object") { window.module = module; module = undefined; }
+    </script>
+
+    <!-- normal script imports etc  -->
+    <script src="./vendor/jquery.js"></script>
+    <script src="./vendor/knockout-3.4.2.js"></script>
+    <script src="./vendor/what-input.js"></script>
+    <script src="./vendor/foundation.js"></script>
+    <script src="./app.js"></script>
+
+    <script>
+        // You can also require other files to run in this process
+        require("./renderer.js");
+    </script>
 </body>
-
-<!-- Insert this line above script imports  -->
-<script>
-    if (typeof module === "object") { window.module = module; module = undefined; }
-
-</script>
-
-<!-- normal script imports etc  -->
-<script src="./vendor/jquery.js"></script>
-<script src="./vendor/knockout-3.4.2.js"></script>
-<script src="./vendor/what-input.js"></script>
-<script src="./vendor/foundation.js"></script>
-<script src="./app.js"></script>
-
-<script>
-    // You can also require other files to run in this process
-    require("./renderer.js");
-
-</script>
 
 </html>
