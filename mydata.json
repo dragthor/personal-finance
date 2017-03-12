@@ -1,11 +1,51 @@
 {
+    "monthly-income": [
+        {
+            "name": "Primary Job",
+            "amount": 3000
+        },
+        {
+            "name": "Part-Time Job",
+            "amount": 300
+        }
+    ],
+    "monthly-expenses": [
+        {
+            "name": "Food",
+            "amount": 500
+        },
+        {
+            "name": "Internet",
+            "amount": 60
+        },
+        {
+            "name": "Car Insurance",
+            "amount": 200
+        }
+    ],
+    "monthly-savings": [
+        {
+            "name": "Bank1",
+            "amount": 400
+        }
+    ],
+    "monthly-debts": [
+        {
+            "name": "Mortgage",
+            "amount": 1200
+        },
+        {
+            "name": "Car Loan",
+            "amount": 145
+        }
+    ],
     "savings": [
         {
             "name": "Bank",
             "balance": 1000,
             "yield": 10
         },
-                {
+        {
             "name": "Bank2",
             "balance": 1000,
             "yield": 12.50

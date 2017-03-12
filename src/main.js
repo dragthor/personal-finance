@@ -91,7 +91,7 @@ function createWindow() {
   mainWindow.loadURL(`file://${__dirname}/index.html`);
 
   // Open the DevTools.
-  mainWindow.webContents.openDevTools();
+  // mainWindow.webContents.openDevTools();
 
 
   Menu.setApplicationMenu(menu);
