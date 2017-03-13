@@ -28,12 +28,19 @@
                         <table>
                             <thead>
                                 <tr>
-
-                                    <th colspan="2">Name</th>
+                                    <th colspan="2" class="firstCol">Name</th>
                                     <th>Amount</th>
-                                    <th>Done</th>
+                                    <th class="lastCol">Done</th>
                                 </tr>
                             </thead>
+
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2" class="sum">Total:</td>
+                                    <td colspan="2" data-bind="text: monthlyincomeTotal">0</td>
+                                </tr>
+                            </tfoot>
+
                             <tbody data-bind="foreach: monthlyincome">
                                 <tr>
                                     <td>
@@ -63,11 +70,20 @@
                             <thead>
                                 <tr>
 
-                                    <th colspan="2">Name</th>
+                                    <th colspan="2" class="firstCol">Name</th>
                                     <th>Amount</th>
-                                    <th>Done</th>
+                                    <th class="lastCol">Done</th>
                                 </tr>
                             </thead>
+
+
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2" class="sum">Total:</td>
+                                    <td colspan="2" data-bind="text: monthlyexpensesTotal">0</td>
+                                </tr>
+                            </tfoot>
+
                             <tbody data-bind="foreach: monthlyexpenses">
                                 <tr>
                                     <td>
@@ -94,11 +110,19 @@
                             <thead>
                                 <tr>
 
-                                    <th colspan="2">Name</th>
+                                    <th colspan="2" class="firstCol">Name</th>
                                     <th>Amount</th>
-                                    <th>Done</th>
+                                    <th class="lastCol">Done</th>
                                 </tr>
                             </thead>
+
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2" class="sum">Total:</td>
+                                    <td colspan="2" data-bind="text: monthlysavingsTotal">0</td>
+                                </tr>
+                            </tfoot>
+
                             <tbody data-bind="foreach: monthlysavings">
                                 <tr>
                                     <td>
@@ -128,11 +152,19 @@
                             <thead>
                                 <tr>
 
-                                    <th colspan="2">Name</th>
+                                    <th colspan="2" class="firstCol">Name</th>
                                     <th>Amount</th>
-                                    <th>Done</th>
+                                    <th class="lastCol">Done</th>
                                 </tr>
                             </thead>
+
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2" class="sum">Total:</td>
+                                    <td colspan="2" data-bind="text: monthlydebtsTotal">0</td>
+                                </tr>
+                            </tfoot>
+
                             <tbody data-bind="foreach: monthlydebts">
                                 <tr>
                                     <td>
@@ -158,13 +190,17 @@
         </div>
 
         <div class="small-12 medium-4 large-3 columns">
+
+        <canvas id="myChart" width="400" height="400"></canvas>
+
+
             <h3><span class="fi-dollar-bill"></span> Savings</h3>
 
             <table>
                 <thead>
                     <tr>
 
-                        <th colspan="2">Name</th>
+                        <th colspan="2" width="80%">Name</th>
                         <th>Value</th>
                         <th>$ Yield</th>
                     </tr>
@@ -352,6 +388,7 @@
     <script src="./vendor/knockout-3.4.2.js"></script>
     <script src="./vendor/what-input.js"></script>
     <script src="./vendor/foundation.js"></script>
+    <script src="./vendor/Chart.js"></script>
     <script src="./app.js"></script>
 
     <script>

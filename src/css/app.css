@@ -25,3 +25,19 @@ h1, h2, h3, h4, h5, h6 {
 input[type="checkbox"] {
     margin: 0;
 }
+
+table tfoot {
+    background: #f8f8f8;
+}
+
+th.firstCol {
+    width: 80%;
+}
+
+th.lastCol {
+    width: 5%;
+}
+
+td.sum {
+    text-align: right;
+}

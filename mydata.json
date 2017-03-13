@@ -2,89 +2,89 @@
     "monthly-income": [
         {
             "name": "Primary Job 1st of Month",
-            "amount": 1500
+            "amount": 1500.00
         },
         {
             "name": "Primary Job 15th of Month",
-            "amount": 1500
+            "amount": 1500.00
         },
         {
             "name": "Part-Time Job 1st of Month",
-            "amount": 150
+            "amount": 150.00
         },
         {
             "name": "Part-Time Job 15th of Month",
-            "amount": 150
+            "amount": 150.00
         }
     ],
     "monthly-expenses": [
         {
             "name": "Food",
-            "amount": 500
+            "amount": 500.00
         },
         {
             "name": "Internet",
-            "amount": 60
+            "amount": 60.00
         },
         {
             "name": "Car Insurance",
-            "amount": 200
+            "amount": 200.00
         }
     ],
     "monthly-savings": [
         {
             "name": "Bank1",
-            "amount": 400
+            "amount": 400.00
         }
     ],
     "monthly-debts": [
         {
             "name": "Mortgage",
-            "amount": 1200
+            "amount": 1200.00
         },
         {
             "name": "Car Loan",
-            "amount": 145
+            "amount": 145.00
         }
     ],
     "savings": [
         {
             "name": "Bank",
-            "balance": 1000,
-            "yield": 10
+            "balance": 1000.00,
+            "yield": 10.00
         },
         {
             "name": "Bank2",
-            "balance": 1000,
+            "balance": 1000.00,
             "yield": 12.50
         }
     ],
     "assets": [
         {
             "name": "Bonds",
-            "balance": 5000,
-            "yield": 50
+            "balance": 5000.00,
+            "yield": 50.00
         },
         {
             "name": "Stocks",
-            "balance": 1000,
+            "balance": 1000.00,
             "yield": 1.75
         },
         {
             "name": "CDs",
-            "balance": 1000,
+            "balance": 1000.00,
             "yield": 12.50
         }
     ],
     "debts": [
         {
             "name": "Mortgage",
-            "balance": 200000,
+            "balance": 200000.00,
             "rate": 3.875
         },
         {
             "name": "Car Loan",
-            "balance": 6000,
+            "balance": 6000.00,
             "rate": 2.25
         }
     ]
