@@ -1,12 +1,20 @@
 {
     "monthly-income": [
         {
-            "name": "Primary Job",
-            "amount": 3000
+            "name": "Primary Job 1st of Month",
+            "amount": 1500
         },
         {
-            "name": "Part-Time Job",
-            "amount": 300
+            "name": "Primary Job 15th of Month",
+            "amount": 1500
+        },
+        {
+            "name": "Part-Time Job 1st of Month",
+            "amount": 150
+        },
+        {
+            "name": "Part-Time Job 15th of Month",
+            "amount": 150
         }
     ],
     "monthly-expenses": [
